@@ -1,11 +1,11 @@
-//write it java version and jakarata version used also how to create and run this app
 # Project Name
 Servlet CRUD Application
 
 ## Technologies Used
-- Java 11
+- Java 26
 - Jakarta Servlet API 5.0
 - Maven
+- IntelliJ IDEA
 
 ## How to Create and Run the App
 1. Clone the repository.
@@ -13,7 +13,7 @@ Servlet CRUD Application
 3. Build the project using Maven: `mvn clean install`
 4. Deploy the generated WAR file to a servlet container (e.g., Apache Tomcat).
 5. Start the servlet container.
-6. Access the application at `http://localhost:8080/your-app-name/users`
+6. Access the application at `http://localhost:8080/crud-app/users`
 7. You can perform CRUD operations (Create, Read, Update, Delete) on the user data through the web interface.
 8. Make sure to configure your database connection in the `web.xml` or a configuration file as needed for your application.
 9. Note: Ensure that you have the necessary database setup and credentials before running the application.
