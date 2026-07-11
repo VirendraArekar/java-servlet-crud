@@ -106,8 +106,17 @@ public class UserServlet extends HttpServlet {
     @Override
     public void doDelete(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
+        if(id == null){
+            response.setStatus(400);
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().write(
+                    "{\n" +
+                            "    \"message\" : \"Id is missing\"\n" +
+                            "}"
+            );
+        }
         userService.deleteUser(id);
-
         //  return response
         response.setStatus(200);
         response.setContentType("application/json");

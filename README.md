@@ -121,10 +121,14 @@ Servlet CRUD Application
 ```
 No content returned
 ```
-- **Response (404 Not Found):**
+- **Response (200 OK):**
+
 ```json
 {
-  "error": "User not found"
+  "id": 1,
+  "name": "John Updated",
+  "email": "john.updated@example.com",
+  "phone": "1111111111"
 }
 ```
 
